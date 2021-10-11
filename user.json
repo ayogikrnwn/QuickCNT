@@ -1,0 +1,100 @@
+{
+  "user": {
+    "tps1": {
+      "email": "tps1@gmail.com",
+      "password": "tps1"
+    },
+    "tps2": {
+      "email": "tps2@gmail.com",
+      "password": "tps2"
+    },
+    "tps3": {
+      "email": "tps3@gmail.com",
+      "password": "tps3"
+    },
+    "tps4": {
+      "email": "tps4@gmail.com",
+      "password": "tps4"
+    },
+    "tps5": {
+      "email": "tps5@gmail.com",
+      "password": "tps5"
+    },
+    "tps6": {
+      "email": "tps6@gmail.com",
+      "password": "tps6"
+    },
+    "tps7": {
+      "email": "tps7@gmail.com",
+      "password": "tps7"
+    },
+    "tps8": {
+      "email": "tps8@gmail.com",
+      "password": "tps8"
+    },
+    "tps9": {
+      "email": "tps9@gmail.com",
+      "password": "tps9"
+    },
+    "tps10": {
+      "email": "tps10@gmail.com",
+      "password": "tps10"
+    },
+    "tps11": {
+      "email": "tps11@gmail.com",
+      "password": "tps11"
+    }
+  },
+  "QuickCount": {
+    "calon1": {
+      "user": {
+        "tps1": {
+          "namaTps": "tps1",
+          "suara": 0,
+          "total": 0
+        }
+      },
+      "total": 0
+    },
+    "calon2": {
+      "user": {
+        "tps1": {
+          "namaTps": "tps1",
+          "suara": 0,
+          "total": 0
+        }
+      },
+      "total": 0
+    },
+    "calon3": {
+      "user": {
+        "tps1": {
+          "namaTps": "tps1",
+          "suara": 0,
+          "total": 0
+        }
+      },
+      "total": 0
+    },
+    "calon4": {
+      "user": {
+        "tps1": {
+          "namaTps": "tps1",
+          "suara": 0,
+          "total": 0
+        }
+      },
+      "total": 0
+    },
+    "tidakSah": {
+      "user": {
+        "tps1": {
+          "namaTps": "tps1",
+          "suara": 0,
+          "total": 0
+        }
+      },
+      "total": 0
+    }
+  }
+}

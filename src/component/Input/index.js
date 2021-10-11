@@ -1,7 +1,6 @@
-import React, { useState } from "react";
-import { StyleSheet, Text, View } from "react-native";
-import { TextInput } from "react-native-gesture-handler";
-
+import React, {useState} from 'react';
+import {StyleSheet, Text, View} from 'react-native';
+import {TextInput} from 'react-native-gesture-handler';
 
 const Input = ({
   label,
@@ -42,9 +41,9 @@ const Input = ({
 
 export default Input;
 const styles = StyleSheet.create({
-  input: (border) => ({
+  input: border => ({
     borderWidth: 1,
-    borderColor: "#C6BDBD",
+    borderColor: '#C6BDBD',
     borderRadius: 10,
     padding: 12,
   }),
@@ -52,6 +51,6 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: '#000',
     marginBottom: 6,
-    fontFamily: "Nunito-Regular",
+    fontFamily: 'Nunito-Regular',
   },
 });

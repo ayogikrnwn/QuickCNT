@@ -1,18 +1,25 @@
 import React from 'react';
 import {StyleSheet, Text, View, Image} from 'react-native';
-import { Logo } from '../../assets';
+import {Logo} from '../../assets';
+import {ContextReact} from '../../context/state';
 
-const Header = () => {
+const Header = ({total}) => {
+  const context = React.useContext(ContextReact);
+  const {touched} = context.data;
+
   return (
     <View style={styles.header}>
       <View style={styles.contenheader}>
         {/* <Image source={Logo} style={styles.img} /> */}
-       
-          <Text style={styles.text}>Quick Count</Text>
-          
 
-      
-      
+        <Text style={styles.text}>Quick Count </Text>
+        {total ? (
+          <Text style={styles.text}>
+            {touched || 0} dari {total || 0}
+          </Text>
+        ) : (
+          <></>
+        )}
       </View>
     </View>
   );
@@ -30,10 +37,10 @@ const styles = StyleSheet.create({
   },
   contenheader: {
     paddingTop: 5,
-   flex: 1,
- 
-   justifyContent: 'center',
-   alignItems: 'center'
+    flex: 1,
+
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   img: {
     width: 91,
@@ -43,7 +50,6 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins-Medium',
     color: 'white',
     fontSize: 30,
-    
   },
   textbobcer: {
     fontFamily: 'Poppins-Medium',
