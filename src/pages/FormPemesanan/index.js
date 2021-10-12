@@ -105,6 +105,15 @@ const FormPemesanan = ({}) => {
     }
   };
 
+  const getCount = noUrut => {
+    const cekUser = quickCount[noUrut].user[replaceEmail(isLogin.email)];
+    if (cekUser) {
+      return cekUser.suara;
+    } else {
+      return 0;
+    }
+  };
+
   return (
     <>
       <View style={styles.container}>
@@ -162,9 +171,7 @@ const FormPemesanan = ({}) => {
                 flexDirection: 'row',
               }}>
               <View style={styles.newBtnView}>
-                <Text style={styles.newTextbtntop}>
-                  {quickCount.calon1.total}
-                </Text>
+                <Text style={styles.newTextbtntop}>{getCount('calon1')}</Text>
                 <TouchableOpacity
                   onPress={() => {
                     pushTouched('calon1');
@@ -175,9 +182,7 @@ const FormPemesanan = ({}) => {
                 <Text style={styles.newTextbtn}>Calon No. 1</Text>
               </View>
               <View style={styles.newBtnView}>
-                <Text style={styles.newTextbtntop}>
-                  {quickCount.calon2.total}
-                </Text>
+                <Text style={styles.newTextbtntop}>{getCount('calon2')}</Text>
                 <TouchableOpacity
                   onPress={() => {
                     pushTouched('calon2');
@@ -193,9 +198,7 @@ const FormPemesanan = ({}) => {
                 flexDirection: 'row',
               }}>
               <View style={{flex: 1, alignItems: 'center'}}>
-                <Text style={styles.newTextbtntop}>
-                  {quickCount.calon3.total}
-                </Text>
+                <Text style={styles.newTextbtntop}>{getCount('calon3')}</Text>
                 <TouchableOpacity
                   onPress={() => {
                     pushTouched('calon3');
@@ -205,9 +208,7 @@ const FormPemesanan = ({}) => {
                 <Text style={styles.newTextbtn}>Calon No. 3</Text>
               </View>
               <View style={{flex: 1, alignItems: 'center'}}>
-                <Text style={styles.newTextbtntop}>
-                  {quickCount.calon4.total}
-                </Text>
+                <Text style={styles.newTextbtntop}>{getCount('calon4')}</Text>
                 <TouchableOpacity
                   onPress={() => {
                     pushTouched('calon4');
@@ -223,9 +224,7 @@ const FormPemesanan = ({}) => {
                 flexDirection: 'row',
               }}>
               <View style={{flex: 1, alignItems: 'center'}}>
-                <Text style={styles.newTextbtntop}>
-                  {quickCount.tidakSah.total}
-                </Text>
+                <Text style={styles.newTextbtntop}>{getCount('tidakSah')}</Text>
                 <TouchableOpacity
                   onPress={() => {
                     pushTouched('tidakSah');
